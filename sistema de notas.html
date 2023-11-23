@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de Notas</h1>
+    <form>
+    <p>Av1: <input type="number" min="0" max="10" required id="av1"></p>
+    <p>Av2: <input type="number" min="0" max="10" required id="av2"></p>
+    <p>Av2: <input type="number" min="0" max="10" required id = "av3"></p>
+    <p><input type="submit" value="Calcular" id="inCalcular"></p>
+</form>
+
+       <p><input type="button" value="Exibir" id="inExibir">
+        <input type="button" value="Total" id="inTotal">
+        <input type="button" value="Maior" id="inMaior">
+        <input type="button" value="Menor" id="inMenor"></p>
+
+        <h3></h3>
+        <script>
+            const form = document.querySelector("form")
+            const resp = document.querySelector("h3")
+
+            const medias = []
+
+            form.addEventListener("submit", (e) =>{
+                e.preventDefault
+                const av1 = document.av1.value
+                const av2 = document.av2.value
+                const av3 = document.av3.value
+                saida = ""
+                
+                saida = "Notas cadastardas:\n Nota 1" + av1 + "\nNota 2: " + av2 + "\nNota 3: " + av3 
+            })
+        </script>
+</body>
+</html>
